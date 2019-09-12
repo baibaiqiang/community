@@ -3,13 +3,15 @@
 ## 资料
 [Spring 文档](https://spring.io/guides/)  
 [Spring Web](https://spring.io/guides/gs/serving-web-content/)  
-[Github develoy key](https://elasticsearch.cn/explore/)  
-[Bootstrap](https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys/)  
+[elasticsearch社区](https://elasticsearch.cn/explore/)   
+[Github develoy key](https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys/)    
+[Bootstrap栅格系统](https://v3.bootcss.com/css/#type-headings)  
 [OKHttp](https://square.github.io/okhttp/)  
-## 工具
-[Git](https://git-scm.com/downloads)
-[Visual Paradigm](https://www.visual-paradigm.com/cn/)
 
+## 工具
+[Git](https://git-scm.com/downloads)  
+[Visual Paradigm](https://www.visual-paradigm.com/cn/)  
+[Flyway](https://flywaydb.org/getstarted/firststeps/maven)  
 ## 脚本
 ```sql
 CREATE  TABLE USER(
@@ -21,5 +23,8 @@ CREATE  TABLE USER(
     GMT_MODIFIED BIGINT
 )
 
+```
+```bash
 
+mvn flyway:migrate
 ```
