@@ -11,30 +11,37 @@ import java.util.List;
  **/
 @Data
 public class PaginationDTO {
+    /**
+    *当前页问题列表
+    */
     private List<QuestionDTO> questions;
     private Boolean showPrevious;
     private Boolean showFirstPage;
     private Boolean showNext;
     private Boolean showEndPage;
+    /**
+     * 当前页
+     */
     private Integer page;
+    /**
+     * 当前页显示的页码列表
+     */
     private List<Integer> pages;
     private Integer totalPage;
-    //当前页前后显示范围
+    /**
+     * 当前页前后显示范围
+     */
     private static final Integer pageRange = 3;
 
+    /**
+     * 设置页码信息
+     * @param totalPage 记录总页数
+     * @param page 当前页
+     */
+    public void setPagination(Integer totalPage, Integer page) {
 
-    public void setPagination(Integer totalCount, Integer page, Integer size) {
-
-
-
+        this.totalPage = totalPage;
         pages= new ArrayList<>();
-
-        if(totalCount % size == 0){
-            totalPage = totalCount / size;
-        }else{
-            totalPage = totalCount / size + 1;
-        }
-
 
         //将参数page赋值给属性page
         this.page = page;
