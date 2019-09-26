@@ -11,14 +11,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * @date 2019/9/21
  **/
 @Configuration
-@EnableWebMvc
+//@EnableWebMvc
 public class WebConfig implements WebMvcConfigurer {
 
     @Autowired
     private SessionInterceptor sessionInterceptor;
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(sessionInterceptor).addPathPatterns("/**").excludePathPatterns("js/**","css/**",
-                "fonts/**");
+        registry.addInterceptor(sessionInterceptor).addPathPatterns("/**");
     }
 }
