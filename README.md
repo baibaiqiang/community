@@ -18,7 +18,8 @@
 [Visual Paradigm](https://www.visual-paradigm.com/cn/)  
 [Flyway](https://flywaydb.org/getstarted/firststeps/maven)  
 [Lombok](https://projectlombok.org/)(需要安装IDEA插件)  
-[JQuery](https://jquery.com/)
+[JQuery](https://jquery.com/)  
+[Postman](https://chrome.google.com/webstore/detail/tabbed-postman-rest-clien/coohjcphdfgbiolnekdpbcijmhambjff)
 ## 脚本
 ```sql
 CREATE  TABLE USER(
